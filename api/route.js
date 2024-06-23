@@ -4,7 +4,7 @@ import { getAlojamientos } from './controller.js';
 const router = express.Router();
 
 function routerApi(app) {
-	app.use('/', router);
+	app.use('/api', router);
 }
 
 router.get('/', (req, res) => {
