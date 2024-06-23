@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 	res.send('[Server] connected');
 });
 
-router.get('/alojamientos', getAlojamientos);
+router.post('/alojamientos', getAlojamientos);
 
 export { routerApi };
 
