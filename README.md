@@ -1,0 +1,1 @@
+endpoint de alojamientos para tp IA
