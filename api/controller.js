@@ -79,7 +79,7 @@ const formatAlojamientos = (alojamientosFiltrados) => {
 				cantidadPersonas,
 			} = alojamiento;
 
-			return `Nombre: ${nombre}\nCiudad: ${ciudad}\nTipo: ${tipoAlojamiento}\nUbicación: ${ubicacion}\nFacilidades: ${facilidades.join(
+			return `<h1>Nombre: ${nombre}</h1>\nCiudad: ${ciudad}\nTipo: ${tipoAlojamiento}\nUbicación: ${ubicacion}\nFacilidades: ${facilidades.join(
 				', ',
 			)}\nCapacidad: ${cantidadPersonas} personas\n`;
 		})
