@@ -3,7 +3,10 @@ import alojamientos from './alojamientos.js';
 const getAlojamientos = async (req, res) => {
 	console.log(req);
 	const cards = alojamientos.map(createCard);
-	return res.json(cards);
+	return res.json({
+		response_type: 'carousel',
+		cards: cards,
+	});
 };
 
 const createCard = (alojamiento) => {
@@ -22,11 +25,6 @@ const createCard = (alojamiento) => {
 			},
 		],
 	};
-};
-
-return {
-	response_type: 'carousel',
-	cards: cards,
 };
 
 export { getAlojamientos };
