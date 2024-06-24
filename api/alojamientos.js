@@ -5,6 +5,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Television', 'Desayuno'],
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Centro',
+		cantidadPersonas: 2,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -12,6 +13,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Calefaccion', 'Lavarropas'],
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
+		cantidadPersonas: 3,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -19,6 +21,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Aire acondicionado', 'Estacionamiento'],
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'A las afueras',
+		cantidadPersonas: 5,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -26,6 +29,7 @@ const alojamientos = [
 		facilidades: ['Pileta', 'Calefaccion', 'Television'],
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
+		cantidadPersonas: 6,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -33,6 +37,7 @@ const alojamientos = [
 		facilidades: ['Calefaccion', 'Lavarropas', 'Pileta'],
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
+		cantidadPersonas: 4,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -40,6 +45,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Television', 'Desayuno'],
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
+		cantidadPersonas: 3,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -47,6 +53,7 @@ const alojamientos = [
 		facilidades: ['Aire acondicionado', 'Television', 'Estacionamiento'],
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Montaña',
+		cantidadPersonas: 2,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -54,6 +61,7 @@ const alojamientos = [
 		facilidades: ['Pileta', 'WiFi', 'Lavarropas'],
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'A las afueras',
+		cantidadPersonas: 5,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -61,6 +69,7 @@ const alojamientos = [
 		facilidades: ['Estacionamiento', 'Television', 'Calefaccion'],
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
+		cantidadPersonas: 6,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -68,6 +77,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Calefaccion', 'Pileta'],
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
+		cantidadPersonas: 4,
 	},
 	{
 		ciudad: 'Rosario',
@@ -75,6 +85,7 @@ const alojamientos = [
 		facilidades: ['Desayuno', 'Television', 'WiFi'],
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Centro',
+		cantidadPersonas: 2,
 	},
 	{
 		ciudad: 'Rosario',
@@ -82,6 +93,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Calefaccion', 'Aire acondicionado'],
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
+		cantidadPersonas: 3,
 	},
 	{
 		ciudad: 'Rosario',
@@ -89,6 +101,7 @@ const alojamientos = [
 		facilidades: ['Television', 'Lavarropas', 'Estacionamiento'],
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'A las afueras',
+		cantidadPersonas: 5,
 	},
 	{
 		ciudad: 'Rosario',
@@ -96,6 +109,7 @@ const alojamientos = [
 		facilidades: ['Pileta', 'Estacionamiento', 'WiFi'],
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
+		cantidadPersonas: 6,
 	},
 	{
 		ciudad: 'Rosario',
@@ -103,6 +117,7 @@ const alojamientos = [
 		facilidades: ['Calefaccion', 'Pileta', 'Television'],
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
+		cantidadPersonas: 4,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -110,6 +125,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Television', 'Desayuno'],
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Centro',
+		cantidadPersonas: 2,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -117,6 +133,7 @@ const alojamientos = [
 		facilidades: ['Calefaccion', 'Aire acondicionado', 'Lavarropas'],
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
+		cantidadPersonas: 3,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -124,6 +141,7 @@ const alojamientos = [
 		facilidades: ['Pileta', 'Estacionamiento', 'Television'],
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'Campo',
+		cantidadPersonas: 5,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -131,6 +149,7 @@ const alojamientos = [
 		facilidades: ['WiFi', 'Calefaccion', 'Desayuno'],
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
+		cantidadPersonas: 6,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -138,6 +157,7 @@ const alojamientos = [
 		facilidades: ['Pileta', 'WiFi', 'Television'],
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
+		cantidadPersonas: 4,
 	},
 ];
 

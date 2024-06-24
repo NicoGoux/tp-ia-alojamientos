@@ -1,23 +1,82 @@
 import alojamientos from './alojamientos.js';
 
 const getAlojamientos = async (req, res) => {
-	console.log(req);
-	const text = formatAlojamientos();
+	const { body } = req;
+	const filters = {
+		ciudad: body.ciudad,
+		fecha_desde: body.fecha_desde,
+		fecha_hasta: body.fecha_hasta,
+		cantidad_personas: body.cantidad_personas,
+		tipo_alojamiento: body.tipo_alojamiento,
+		ubicacion_alojamiento: body.ubicacion_alojamiento,
+		precio_minimo: body.precio_minimo,
+		precio_maximo: body.precio_maximo,
+	};
+	const alojamientosFiltrados = filterAlojamientos(filters, alojamientos);
+	const text = formatAlojamientos(alojamientosFiltrados);
 	return res.json({
-		result: text || 'hola',
+		result: text,
+	});
+};
+
+// Función para filtrar los alojamientos
+const filterAlojamientos = (filters, alojamientos) => {
+	return alojamientos.filter((alojamiento) => {
+		let matches = true;
+
+		if (filters.ciudad && alojamiento.ciudad !== filters.ciudad) {
+			matches = false;
+		}
+
+		if (filters.precio_minimo && alojamiento.precio < filters.precio_minimo) {
+			matches = false;
+		}
+
+		if (filters.precio_maximo && alojamiento.precio > filters.precio_maximo) {
+			matches = false;
+		}
+
+		if (
+			filters.cantidad_personas &&
+			alojamiento.cantidadPersonas < filters.cantidad_personas
+		) {
+			matches = false;
+		}
+
+		if (
+			filters.tipo_alojamiento &&
+			alojamiento.tipoAlojamiento !== filters.tipo_alojamiento
+		) {
+			matches = false;
+		}
+
+		if (
+			filters.ubicacion_alojamiento &&
+			alojamiento.ubicacion !== filters.ubicacion_alojamiento
+		) {
+			matches = false;
+		}
+
+		return matches;
 	});
 };
 
 // Función para formatear los alojamientos en un string amigable para el usuario
-const formatAlojamientos = () => {
-	return alojamientos
+const formatAlojamientos = (alojamientosFiltrados) => {
+	return alojamientosFiltrados
 		.map((alojamiento) => {
-			const { ciudad, nombre, facilidades, tipoAlojamiento, ubicacion } =
-				alojamiento;
+			const {
+				ciudad,
+				nombre,
+				facilidades,
+				tipoAlojamiento,
+				ubicacion,
+				cantidadPersonas,
+			} = alojamiento;
 
 			return `Nombre: ${nombre}\nCiudad: ${ciudad}\nTipo: ${tipoAlojamiento}\nUbicación: ${ubicacion}\nFacilidades: ${facilidades.join(
 				', ',
-			)}\n`;
+			)}\nCapacidad: ${cantidadPersonas} personas\n`;
 		})
 		.join('\n------------------\n'); // Separador entre alojamientos
 };
