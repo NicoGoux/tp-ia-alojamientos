@@ -15,7 +15,7 @@ const getAlojamientos = async (req, res) => {
 	const alojamientosFiltrados = filterAlojamientos(filters, alojamientos);
 	const text = formatAlojamientos(alojamientosFiltrados);
 	return res.json({
-		result: text,
+		result: text != '' ? text : 'No se encontraron resultados',
 	});
 };
 
