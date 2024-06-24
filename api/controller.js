@@ -24,7 +24,10 @@ const filterAlojamientos = (filters, alojamientos) => {
 	return alojamientos.filter((alojamiento) => {
 		let matches = true;
 
-		if (filters.ciudad && alojamiento.ciudad !== filters.ciudad) {
+		if (
+			filters.ciudad &&
+			alojamiento.ciudad.toLowerCase() !== filters.ciudad.toLowerCase()
+		) {
 			matches = false;
 		}
 
@@ -45,14 +48,16 @@ const filterAlojamientos = (filters, alojamientos) => {
 
 		if (
 			filters.tipo_alojamiento &&
-			alojamiento.tipoAlojamiento !== filters.tipo_alojamiento
+			alojamiento.tipoAlojamiento.toLowerCase() !==
+				filters.tipo_alojamiento.toLowerCase()
 		) {
 			matches = false;
 		}
 
 		if (
 			filters.ubicacion_alojamiento &&
-			alojamiento.ubicacion !== filters.ubicacion_alojamiento
+			alojamiento.ubicacion.toLowerCase() !==
+				filters.ubicacion_alojamiento.toLowerCase()
 		) {
 			matches = false;
 		}
