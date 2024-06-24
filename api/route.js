@@ -1,5 +1,5 @@
 import express from 'express';
-import { getAlojamientos } from './controller.js';
+import generalController from './controller.js';
 
 const router = express.Router();
 
@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 	res.send('[Server] connected');
 });
 
-router.post('/alojamientos', getAlojamientos);
+router.post('/chat', generalController);
 
 export { routerApi };
 
