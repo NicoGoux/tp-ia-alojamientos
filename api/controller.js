@@ -1,10 +1,11 @@
 import { getAlojamientos } from './alojamientosController.js';
+import { generateTicket } from './ticketController.js';
 
 const generalController = async (req, res) => {
 	const { body } = req;
 	const { type } = body;
 	if (type === 'generate-ticket') {
-		res.json({ result: 'generar ticket' });
+		return await generateTicket(req, res);
 	} else if (type === 'get-ticket-state') {
 		res.json({ result: 'mostrar estado ticket' });
 	} else {
