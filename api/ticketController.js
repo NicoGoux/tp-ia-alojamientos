@@ -8,10 +8,12 @@ const generateTicket = async (req, res) => {
 		});
 	}
 
+	const nroTicket = Math.floor(Math.random() * 1000);
+
 	return res.json({
-		result: `<h5 style="text-decoration: underline">N° de ticket: ${
-			Math.random() * 1000
-		}</h5><b>Tipo</b>: ${tipo || 'General'}\n<b>Descripción</b>: ${descripcion}`,
+		result: `<h5 style="text-decoration: underline">N° de ticket: #${nroTicket}</h5><b>Tipo</b>: ${
+			tipo || 'General'
+		}\n<b>Descripción</b>: ${descripcion}`,
 	});
 };
 
