@@ -6,6 +6,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Centro',
 		cantidadPersonas: 2,
+		precio: 100,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -14,6 +15,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
 		cantidadPersonas: 3,
+		precio: 80,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -22,6 +24,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'A las afueras',
 		cantidadPersonas: 5,
+		precio: 120,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -30,6 +33,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
 		cantidadPersonas: 6,
+		precio: 150,
 	},
 	{
 		ciudad: 'Buenos Aires',
@@ -38,6 +42,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
 		cantidadPersonas: 4,
+		precio: 90,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -46,6 +51,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
 		cantidadPersonas: 3,
+		precio: 85,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -54,6 +60,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Montaña',
 		cantidadPersonas: 2,
+		precio: 95,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -62,6 +69,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'A las afueras',
 		cantidadPersonas: 5,
+		precio: 110,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -70,6 +78,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
 		cantidadPersonas: 6,
+		precio: 130,
 	},
 	{
 		ciudad: 'Cordoba',
@@ -78,6 +87,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
 		cantidadPersonas: 4,
+		precio: 100,
 	},
 	{
 		ciudad: 'Rosario',
@@ -86,6 +96,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Centro',
 		cantidadPersonas: 2,
+		precio: 90,
 	},
 	{
 		ciudad: 'Rosario',
@@ -94,6 +105,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
 		cantidadPersonas: 3,
+		precio: 85,
 	},
 	{
 		ciudad: 'Rosario',
@@ -102,6 +114,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'A las afueras',
 		cantidadPersonas: 5,
+		precio: 105,
 	},
 	{
 		ciudad: 'Rosario',
@@ -110,6 +123,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
 		cantidadPersonas: 6,
+		precio: 140,
 	},
 	{
 		ciudad: 'Rosario',
@@ -118,6 +132,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
 		cantidadPersonas: 4,
+		precio: 95,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -126,6 +141,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Hotel',
 		ubicacion: 'Centro',
 		cantidadPersonas: 2,
+		precio: 100,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -134,6 +150,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Departamento',
 		ubicacion: 'Centro',
 		cantidadPersonas: 3,
+		precio: 80,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -142,6 +159,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Casa',
 		ubicacion: 'Campo',
 		cantidadPersonas: 5,
+		precio: 110,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -150,6 +168,7 @@ const alojamientos = [
 		tipoAlojamiento: 'Quinta',
 		ubicacion: 'Campo',
 		cantidadPersonas: 6,
+		precio: 130,
 	},
 	{
 		ciudad: 'Santa Fe',
@@ -158,8 +177,8 @@ const alojamientos = [
 		tipoAlojamiento: 'Cabaña',
 		ubicacion: 'Montaña',
 		cantidadPersonas: 4,
+		precio: 90,
 	},
 ];
 
 export default alojamientos;
-
