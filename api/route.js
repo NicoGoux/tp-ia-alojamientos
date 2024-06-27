@@ -1,5 +1,6 @@
 import express from 'express';
 import generalController from './controller.js';
+import { getCiudades } from './ciudadesController.js';
 
 const router = express.Router();
 
@@ -12,6 +13,8 @@ router.get('/', (req, res) => {
 });
 
 router.post('/chat', generalController);
+
+router.get('/ciudades', getCiudades);
 
 export { routerApi };
 

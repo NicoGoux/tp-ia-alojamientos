@@ -23,7 +23,7 @@ const getTicket = async (req, res) => {
 
 	if (!numero_ticket) {
 		return res.json({
-			result: `Por favor, especifique un numero de ticket`,
+			result: formatTicketList(),
 		});
 	}
 
@@ -42,6 +42,19 @@ const getTicket = async (req, res) => {
 			ticket.descripcion
 		}`,
 	});
+};
+
+const formatTicketList = () => {
+	return tickets
+		.map(
+			(t) =>
+				`<h5 style="text-decoration: underline">N° de ticket: #${
+					t.numeroTicket
+				}</h5><b>Tipo</b>: ${t.tipoTicket || 'Otro'}\n<b>Descripción</b>: ${
+					t.descripcion
+				}`,
+		)
+		.join('\n------------------\n'); // Separador entre alojamientos
 };
 
 export { generateTicket, getTicket };
