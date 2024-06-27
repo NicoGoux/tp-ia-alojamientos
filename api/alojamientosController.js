@@ -77,11 +77,12 @@ const formatAlojamientos = (alojamientosFiltrados) => {
 				tipoAlojamiento,
 				ubicacion,
 				cantidadPersonas,
+				precio,
 			} = alojamiento;
 
 			return `<h5 style="text-decoration: underline">Nombre: ${nombre}</h5><b>Ciudad</b>: ${ciudad}\n<b>Tipo</b>: ${tipoAlojamiento}\n<b>Ubicación</b>: ${ubicacion}\n<b>Facilidades</b>: ${facilidades.join(
 				', ',
-			)}\n<b>Capacidad</b>: ${cantidadPersonas} personas\n`;
+			)}\n<b>Capacidad</b>: ${cantidadPersonas} personas\n<b>Precio por noche</b>: $${precio}`;
 		})
 		.join('\n------------------\n'); // Separador entre alojamientos
 };
