@@ -23,7 +23,7 @@ const getTicket = async (req, res) => {
 
 	if (!numero_ticket) {
 		return res.json({
-			result: formatTicketList(),
+			result: `Sus tickets son: \n ${formatTicketList()}`,
 		});
 	}
 
@@ -31,7 +31,7 @@ const getTicket = async (req, res) => {
 
 	if (!ticket) {
 		return res.json({
-			result: `El ticket solicitado no fue encontrado`,
+			result: `El ticket solicitado no fue encontrado. Puede ser probar con alguno de estos:\n ${formatTicketList()}`,
 		});
 	}
 
@@ -50,9 +50,7 @@ const formatTicketList = () => {
 			(t) =>
 				`<h5 style="text-decoration: underline">N° de ticket: #${
 					t.numeroTicket
-				}</h5><b>Tipo</b>: ${t.tipoTicket || 'Otro'}\n<b>Descripción</b>: ${
-					t.descripcion
-				}`,
+				}</h5><b>Tipo</b>: ${t.tipoTicket || 'Otro'}`,
 		)
 		.join('\n------------------\n'); // Separador entre alojamientos
 };
