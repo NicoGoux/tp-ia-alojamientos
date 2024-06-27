@@ -31,7 +31,7 @@ const getTicket = async (req, res) => {
 
 	if (!ticket) {
 		return res.json({
-			result: `El ticket solicitado no fue encontrado. Puede ser probar con alguno de estos:\n ${formatTicketList()}`,
+			result: `El ticket numero ${numero_ticket} no fue encontrado. Puede ser probar con alguno de estos:\n ${formatTicketList()}`,
 		});
 	}
 
@@ -48,7 +48,7 @@ const formatTicketList = () => {
 	return tickets
 		.map(
 			(t) =>
-				`<h5 style="text-decoration: underline">N° de ticket: #${
+				`<h5 style="text-decoration: underline">N° de ticket: ${
 					t.numeroTicket
 				}</h5><b>Tipo</b>: ${t.tipoTicket || 'Otro'}`,
 		)
