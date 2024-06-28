@@ -2,7 +2,7 @@ import tickets from './tickets.js';
 
 const generateTicket = async (req, res) => {
 	const { body } = req;
-	const { tipo, descripcion } = body;
+	const { tipo_ticket, numero_reserva, descripcion } = body;
 
 	if (!descripcion) {
 		return res.json({
