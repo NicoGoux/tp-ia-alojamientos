@@ -10,7 +10,10 @@ const generateTicket = async (req, res) => {
 		});
 	}
 
-	const nroTicket = Math.floor(Math.random() * 1000);
+	let nroTicket = Math.floor(Math.random() * 1000);
+	while (nroTicket <= 10) {
+		nroTicket = Math.floor(Math.random() * 1000);
+	}
 
 	return res.json({
 		result: `El ticket fue creado con éxito. El numero de ticket es: ${nroTicket}`,
@@ -42,7 +45,7 @@ const getTicket = async (req, res) => {
 			ticket.numeroTicket
 		}</h5><b>Tipo</b>: ${ticket.tipoTicket || 'Otro'}\n<b>Nro de reserva</b>: ${
 			ticket.numeroReserva
-		}\n<b>Descripción</b>: ${ticket.descripcion}`,
+		}\n<b>Estado</b>: ${ticket.estado}\n<b>Descripción</b>: ${ticket.descripcion}`,
 		response_code: 'TicketFound',
 	});
 };
