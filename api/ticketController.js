@@ -24,7 +24,7 @@ const getTicket = async (req, res) => {
 	if (!numero_ticket) {
 		return res.json({
 			result: `Sus tickets son: \n ${formatTicketList()}`,
-			responde_code: 'NumberNotProvide',
+			response_code: 'NumberNotProvide',
 		});
 	}
 
@@ -33,7 +33,7 @@ const getTicket = async (req, res) => {
 	if (!ticket) {
 		return res.json({
 			result: `El ticket numero ${numero_ticket} no fue encontrado. Puede probar con alguno de estos:\n ${formatTicketList()}`,
-			responde_code: 'TicketNotFound',
+			response_code: 'TicketNotFound',
 		});
 	}
 
@@ -43,7 +43,7 @@ const getTicket = async (req, res) => {
 		}</h5><b>Tipo</b>: ${ticket.tipoTicket || 'Otro'}\n<b>Nro de reserva</b>: ${
 			ticket.numeroReserva
 		}\n<b>Descripción</b>: ${ticket.descripcion}`,
-		responde_code: 'TicketFound',
+		response_code: 'TicketFound',
 	});
 };
 
