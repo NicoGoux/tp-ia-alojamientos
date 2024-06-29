@@ -1,4 +1,4 @@
-endpoint de alojamientos para tp IA
+Servicio para ChatBot para trabajo practico Inteligencia Artificial
 
 Insutrcciones para ejecutar:
 - Descargar el proyecto localmente
