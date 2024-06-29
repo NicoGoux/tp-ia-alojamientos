@@ -80,11 +80,11 @@ const formatAlojamientos = (alojamientosFiltrados) => {
 				precio,
 			} = alojamiento;
 
-			return `<h5 style="text-decoration: underline">Nombre: ${nombre}</h5><b>Ciudad</b>: ${ciudad}\n<b>Tipo</b>: ${tipoAlojamiento}\n<b>Ubicación</b>: ${ubicacion}\n<b>Facilidades</b>: ${facilidades.join(
+			return `<h5 style="text-decoration: underline">Nombre: ${nombre}</h5><b>Ciudad</b>: ${ciudad}<br/><b>Tipo</b>: ${tipoAlojamiento}<br/><b>Ubicación</b>: ${ubicacion}<br/><b>Facilidades</b>: ${facilidades.join(
 				', ',
-			)}\n<b>Capacidad</b>: ${cantidadPersonas} personas\n<b>Precio por noche</b>: $${precio}`;
+			)}<br/><b>Capacidad</b>: ${cantidadPersonas} personas<br/><b>Precio por noche</b>: $${precio}`;
 		})
-		.join('\n------------------\n'); // Separador entre alojamientos
+		.join('<hr />'); // Separador entre alojamientos
 };
 
 export { getAlojamientos };
